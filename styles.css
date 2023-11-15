@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("./fonts/AvenirNextLTPro-Heavy.otf") format("opentype");
+}
+@font-face {
+  font-family: "Avenir Bold";
+  src: url("./fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Avenir Regular";
+  src: url("./fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Avenir Light";
+  src: url("./fonts/AvenirNextLTPro-UltLt.otf") format("opentype");
+}
+
+:root {
+  --heavy-font: "Avenir Heavy";
+  --bold-font: "Avenir Bold";
+  --regular-font: "Avenir Regular";
+  --light-font: "Avenir Light";
+  --black-clr: #1f1f21;
+  --white-clr: #fefcfc;
+  --purple-clr: #583580;
+  --orange-clr: #f26e45;
+  --light-black-clr: #26252d;
+  --shadow: rgba(254, 252, 252, 0.1) 0px 20px 25px -5px,
+    rgba(254, 252, 252, 0.04) 0px 10px 10px -5px;
+}
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+
+body {
+  background: var(--black-clr);
+}
+
+section {
+  display: flex;
+}
+
+h4 {
+  font-family: var(--bold-font);
+  font-size: 1.6rem;
+  color: var(--white-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.image-meme {
+  max-width: 100%;
+  height: 250px
+  
+}
+
+.wrapper {
+  max-width: 768px;
+  margin: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+/* Components */
+.logo {
+  height: 5rem;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-family: var(--heavy-font);
+  color: var(--orange-clr);
+}
+
+.meme-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.meme-btn {
+  background: var(--white-clr);
+  border: none;
+  padding: 0.5rem 4rem;
+  border-radius: 10rem;
+  font-family: var(--bold-font);
+  font-size: 1.2rem;
+  color: var(--light-black-clr);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
