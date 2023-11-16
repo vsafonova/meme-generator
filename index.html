@@ -3,32 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./images/icon.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Movie picker</title>
+    <title>Random memes</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div>
-          <img src="https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif" class="logo" alt="logo" />
+          <img
+            src="https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif"
+            class="logo"
+            alt="logo"
+          />
         </div>
-        <h1>Meme's generator</h1>
+        <h1>Random memes</h1>
       </header>
       <main class="main-container">
         <section class="meme-container" id="memeContainer">
-          <img class="image-meme" id="memeImage" alt="Random meme">
+          <h2 class="meme-name" id="memeName"></h2>
+          <div>
+            <img class="image-meme" id="memeImage" alt="Random meme" />
+          </div>
         </section>
         <section class="meme-generator">
-         <button class="meme-btn" id="memeButton">Next meme</button>
-       </section>
-      
+          <button class="meme-btn" id="memeButton">Next meme</button>
+        </section>
       </main>
-      <footer></footer>
+      <footer class="footer">
+        <h4>Safonova Viktoriia</h4>
+        <div class="footer__networks">
+          <div class="networks__link">
+            <a href="https://github.com/vsafonova" target="_blank"
+              ><img
+                class="networks__image"
+                src="./images/github.svg"
+                alt="GitHub icon "
+            /></a>
+          </div>
+          <div class="networks__link">
+            <a
+              href="https://www.linkedin.com/in/viktoriia-safonova-a399291a3/"
+              target="_blank"
+              ><img
+                class="networks__image"
+                src="./images/linkedIn.svg"
+                alt="LinkedIn icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>

@@ -9,6 +9,7 @@ async function getData() {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
+    console.log(result);
 
     return result.data.memes;
   } catch (error) {
@@ -35,6 +36,10 @@ function getRandomEl(array) {
 
 function showRandomMeme(memeList) {
   let randomMeme = getRandomEl(memeList);
-    let imageMemeEl = document.getElementById("memeImage");
-    imageMemeEl.src = randomMeme.url;
+
+  let imageMemeEl = document.getElementById("memeImage");
+  imageMemeEl.src = randomMeme.url;
+  
+  let nameMemeEl = document.getElementById("memeName");
+  nameMemeEl.innerText = randomMeme.name;
 }
