@@ -165,7 +165,14 @@ h4 {
   transition: all 0.5s ease-in-out;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+  .meme-btn {
+  padding: 2rem 5rem;
+  font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
   .meme-btn {
   padding: 3rem 8rem;
   font-size: 2rem;
